@@ -2,7 +2,7 @@ public class ContaTerminal {
     private int numero;
     private String agencia;
     private String nomeCliente;
-    private double saldo;
+    private float saldo;
 
     public ContaTerminal() {}
 
@@ -30,26 +30,26 @@ public class ContaTerminal {
         this.nomeCliente = nomeCliente;
     }
 
-    public double getSaldo() {
+    public float getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(double saldo) {
+    public void setSaldo(float saldo) {
         this.saldo = saldo;
     }
 
-    public void depositar(double valor) {
-        this.saldo =+ valor; 
-    }
-
-    public double saque(double valor) {
-        if (this.saldo<= valor) {
-            this.saldo =- valor;
-        }else{
-            System.out.println("Valor de saldo insuficiente!");
-        }
-        return this.saldo;
-    }
+//    public void depositar(double valor) {
+//        this.saldo =+ valor; 
+//    }
+//
+//    public double saque(double valor) {
+//        if (this.saldo<= valor) {
+//            this.saldo =- valor;
+//        }else{
+//            System.out.println("Valor de saldo insuficiente!");
+//        }
+//        return this.saldo;
+//    }
 
     
     public void exibirDados() {
